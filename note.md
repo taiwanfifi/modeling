@@ -35,7 +35,7 @@ Steps
 - 監督式學習 Supervised Learning
 - 非監督式學習 Unsupervised Learning
 
-<img src="img/M_supervised.jpg" style="width:600px" />
+<img src="img/M_supervised.jpg" />
 
 -  需要考慮每個演算法的特性與前提假設。
     - 例如線性回歸法是基於特徵與結果之間有某種程度的線性關係為前提。  
@@ -60,14 +60,14 @@ dimensionlity reduction
 #### regression
 - 線性回歸法 Linear Regression
 找出事件特徵與結果之間的數學線性關係，根據這樣的資訊就能合理推斷出特徵與結果之間的關聯，而資訊愈來愈多時，也能利用梯度下降 Gradient Descent 之類的技巧，找出最符合所有資料的回歸線，進而獲得一個用特徵來預測結果的模型。
-<img src="img/M_linear_regression.jpg" style="width:500px:center"/>
+<img src="img/M_linear_regression.jpg" style="width:500px"/>
  
 
 #### Classification分類
 
 - 邏輯回歸法 Logistic Regression
 面對非此即彼的分類問題，可以把特徵與結果之間的關聯投射回歸到一個 0 與 1 的邏輯曲線上，0 代表其中一類，1 代表另外一類，以得到一個把任意數值對應到適當分類的模型。
-<img src="img/M_logistic_regression.jpg" style="width:500px:center"/>
+<img src="img/M_logistic_regression.jpg" style="width:500px"/>
 
 
 - 決策樹 Decision Tree
@@ -78,12 +78,12 @@ dimensionlity reduction
 - 隨機森林法 Random Forest
 面對同樣的問題，為了避免單一特徵的重要性被過度放大而造成偏差。  
 如果隨機挑選部分特徵來建構多棵決策樹，最後再用投票的方式來決勝負(選舉最大的重點就是票多的贏、票少的輸)，將會得出比單一決策樹更全面更正確的答案。
-<img src="img/M_random_forest.jpg" style="width:500px"/>
+<img src="img/M_random_forest.jpg" style="width:600px"/>
 
 
 - 梯度提升樹 Gradient Boosted Decision Trees, GBDT
 策略性逐步建構多棵決策樹模型，間接讓重要的特徵佔有更多權重，得到準確度更高的決策樹森林。
-<img src="img/M_gradient_boost_decision_tree.jpg" style="width:500px"/>
+<img src="img/M_gradient_boost_decision_tree.jpg" style="width:600px"/>
 
 
 - 最近鄰居法 K-Nearest Neighbors, KNN
@@ -115,7 +115,7 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 
 - 強化學習 Reinforcement Learning, RL
 在沒有歷史資料的情況下，把代理人，也就是模型直接丟到使用環境當中，透過一連串的動作，來觀察環境狀態，同時接受來自環境的獎勵或懲罰反饋來動態調整模型。經過訓練，模型就能自動做出能獲得最多獎勵的動作。
-<img src="img/M_RL.jpg" style="width:500px"/>
+<img src="img/M_RL.jpg" style="width:400px"/>
 
 
 
@@ -123,7 +123,7 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 
 將類神經網路 Neural Networks，演變深度學習 Deep Learning，把大腦神經元的機制，以數位邏輯的方式來模擬，稱之為感知器 perceptron。  
 其中包含 m 筆輸入 x，一個偏置 bias，經過權重 weights 相乘並加總之後，再通過一個激活函數 activation function 來模擬大腦神經元的電位閥值機制，最終輸出這個節點被激活的程度，傳遞至下一層的 perceptron。
-<img src="img/M_perceptron.jpg" style="width:500px"/>
+<img src="img/M_perceptron.jpg" style="width:600px"/>
 
 
 由於現實中要解決的難題大多不會有簡單的線性解，通常會選用非線性函數的 activation function：
@@ -145,7 +145,7 @@ $$P(A|B) = \frac{P(B|A)P(A)}{P(B)}$$
 進行反向傳播 backward propagation，
 以減少差異為目標，來調整每一個 perceptron 裡的權重 weights。
 
-<img src="img/M_back_propagation.jpg" style="width:500px"/>
+<img src="img/M_back_propagation.jpg" style="width:700px"/>
 
 
 只要資料量夠多，**模型輸出與標準答案之間的差異** 就會在資料一筆一筆正向反向流入模型的自我修正當中逐漸收斂減小。一旦經由模型得出的答案，與標準答案的差異小到某個可以接受的程度，就表示這個模型是訓練好的可用的模型。

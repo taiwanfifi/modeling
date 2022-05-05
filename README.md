@@ -1,9 +1,9 @@
-# modeling
+### modeling
 ---
-machine learning, deep learning models.
+for machine learning, deep learning models.  
 Reference: andy6804tw
 
-## 非監督式學習
+#### 非監督式學習
 k-means分群, 降維, Linear regression, 集成式學習, Stacking
 
 - 分類器  
